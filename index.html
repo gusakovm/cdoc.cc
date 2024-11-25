@@ -236,7 +236,7 @@
             submitButton.disabled = true;
 
             setTimeout(() => {
-                fetch('https://8.cdoc.cc/webhook/cdoc-input?email=' + email, {
+                fetch('https://8.cdoc.cc/api/cdoc-input?email=' + email, {
                     method: 'GET'
                 })
                 .then(response => response.json())
